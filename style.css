@@ -1,0 +1,106 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(211 189 168 / 99%);
+}
+.logo h1{
+    font-size: 25px;
+}
+.logo h1:hover{
+    color: rgb(65, 60, 54);
+    border-bottom: 2px solid rgb(231, 177, 110); 
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(231, 177, 110);
+    color: black;
+    padding: 16px;
+    position: fixed;
+    width: 98%;
+    top:0;
+    z-index: 1000; /* Ensure the navbar is on top of other elements */
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo li{
+    list-style: none;
+    margin-inline: 22px;
+    font-size: 19px;
+}
+.logo li:hover{
+    color: rgb(65, 60, 54);
+    border-bottom: 2px solid rgb(231, 177, 110); 
+    cursor: pointer;
+}
+#first{
+    padding-left: 30px
+}
+.search-bar{
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+}
+.search-bar input{
+    width: 200px;
+    padding: 7px;
+    font-size: 18px;
+    border: none;
+    margin-inline: 5px;
+    border-radius: 4px;
+    flex: 1;
+    outline: none;
+    font-weight: 14px;
+    background: transparent;
+}
+.search-bar button{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 10px;
+    background: transparent;
+    font-size: large;
+}
+.search-bar button:hover{
+    color: rgb(143, 138, 138);
+}
+#cardData{
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    flex: 1;
+    margin: auto;
+    padding-top: 80px;
+}
+.card{
+    width: 300px;
+    background-color: #ece2e2c9;
+    padding: 11px;
+    margin-top: 25px;
+    border-radius: 9px;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+.card:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(10px 10px 10px #969191c9);
+}
+.card img{
+    width:100%;
+    height: 44%;
+}
+.card h3{
+    margin-top: 10px;
+    padding: 3px;
+}
+.card p{
+    margin-top: 10px;
+    padding: 2px;
+    font-size: 13px;
+}

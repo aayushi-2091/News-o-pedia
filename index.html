@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News-o-pedia</title>
+    <link rel="icon" href="logo.png" type="image/logo">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav id="navbar">
+            <div class="logo">
+                <h1 id="heading" onclick="head_click('heading')">Breaking News</h1>
+                <li id="first" onclick="nav_click('first')">Politics</li>
+                <li id="second" onclick="nav_click('second')">Sports</li>
+                <li id="third" onclick="nav_click('third')">Technology</li>
+                <li id="fourth" onclick="nav_click('fourth')">Entertainment</li>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search Here!" value="" id="input_data">
+                <button id="btn">Search</button>
+            </div>
+        </nav>
+        <div class="card_data" id="cardData">
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
